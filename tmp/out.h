@@ -1,38 +1,3 @@
-#ifndef LIB_TP_ADDRS
-#define LIB_TP_ADDRS
-
-// System
-#define tp_memalign_addr 0x80263228
-#define tp_free_addr 0x80263260
-#define tp_strlen_addr 0x80368be4
-#define tp_osReport_addr 0x80006abc
-
-// Controller
-#define tp_mPadButton_addr 0x80434420
-#define tp_mPadStatus_addr 0x804343f0
-
-// TP
-#define tp_globalCounters_addr 0x80430cd8
-#define tp_zelAudio_addr 0x803dbf4c
-#define tp_gameInfo_addr 0x804061c0
-#define tp_sConsole_addr 0x80450c90
-#define tp_linkRollConstants_addr 0x8038d7bc
-
-// Items
-#define tp_clawshot_addr 0x8038e9c0
-#define tp_clawshot_checkbg_addr 0x801087b0
-#define tp_ironboots_addr 0x8038e7f4
-
-// Actor
-#define tp_actor_addr 0x80450610
-
-// Draw
-#define tp_draw_addr 0x8042ebc8
-
-// Inventory
-#define tp_execItemGet_addr 0x80097e8c
-
-// GX
 #define GXSetBlendMode_addr 0x8035FBF0
 #define GXBegin_addr 0x8035C764
 #define GXSetVtxAttrFmt_addr 0x8035B5C4
@@ -64,6 +29,3 @@
 #define GXSetProjection_addr 0x803600D4
 #define GXSetScissor_addr 0x803604D0
 #define GXGetScissor_addr 0x80360548
-#define wgPipe_addr 0xCC008000
-
-#endif  // LIB_TP_ADDRS

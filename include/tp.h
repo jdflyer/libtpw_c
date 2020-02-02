@@ -122,7 +122,7 @@ namespace TP {
         uint8_t _p48[0x726];                         // 8040B87C
         uint16_t link_air_meter;                     // 8040BFA2
     };
-    static_assert(sizeof(GameInfo) == 0x5DE4);
+    // static_assert(sizeof(GameInfo) == 0x5DE4);
 
     struct ZelAudio {
         uint8_t _p0[0x4C4];         // 803DBF4C
