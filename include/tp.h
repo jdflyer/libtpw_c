@@ -129,7 +129,7 @@ namespace TP {
         uint8_t _p24[0x03];                          // 804069B7 -> 8049311F
         uint8_t meteor_warp_enabled;                 // 804069BA -> 80493122 // bit 4 enables meteor warp
         uint8_t _p53;                                // 804069BB -> 80493123
-        uint8_t midna_on_z_and_hide_weapon_as_wolf;  // 804069BC -> 80493124 // bit 3 display link's weapons in his wold form, and bit 4 sets midna
+        uint8_t midna_on_up_and_hide_weapon_as_wolf; // 804069BC -> 80493124 // bit 3 display link's weapons in his wolf form, and bit 4 sets midna
         uint8_t transform_flag;                      // 804069BD -> 80493125 // bit 2 sets transform
         uint8_t _p56[0x06];                          // 804069BE -> 80493126
         uint8_t goron_flag;                          // 804069C4 -> 8049312C ------
