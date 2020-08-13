@@ -10,6 +10,7 @@
 #define tp_getLayerNo_addr 0x8002f640
 #define tp_getSave_addr 0x8003929c
 #define tp_putSave_addr 0x800392cc
+#define tp_fapGm_Execute_addr 0x8001e6b0
 
 // Controller
 #define tp_mPadButton_addr 0x804c2f38
