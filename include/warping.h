@@ -4,18 +4,18 @@
 #include <stdint.h>
 
 struct Entrance {
-    uint8_t stage[8];   // 8040AFCE
-    uint8_t void_flag;  // 8040AFD6
-    uint8_t spawn;      // 8040AFD7
-    uint8_t room;       // 8040AFD8
-    uint8_t state;      // 8040AFD9
+    uint8_t stage[8];   // 8040AFCE -> 80497736
+    uint8_t void_flag;  // 8040AFD6 -> 8049773E
+    uint8_t spawn;      // 8040AFD7 -> 8049773F
+    uint8_t room;       // 8040AFD8 -> 80497740
+    uint8_t state;      // 8040AFD9 -> 80497741
 };
 static_assert(sizeof(Entrance) == 0x0C);
 
 struct Warp {
-    Entrance entrance;  // 8040AFCE
-    uint8_t _p0[2];     // 8040AFDA
-    bool enabled;       // 8040AFDC
+    Entrance entrance;  // 8040AFCE -> 80497736
+    uint8_t _p0[2];     // 8040AFDA -> 80497742
+    bool enabled;       // 8040AFDC -> 80497744
 };
 static_assert(sizeof(Warp) == 0x0F);
 

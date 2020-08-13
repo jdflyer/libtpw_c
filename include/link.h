@@ -39,32 +39,32 @@ namespace Link {
 
     namespace Animations {
         struct HumanFrontRoll {
-            uint8_t _p0[0x18];                // 8038D7BC
-            float bonk_recovery_anim_factor;  // 8038D7D4
-            float bonk_recoil_anim_speed;     // 8038D7D8
-            uint8_t _p1[0x28];                // 8038D7DC
-            float roll_factor;                // 8038D804
-            uint8_t _p2[0x24];                // 8038d808
+            uint8_t _p0[0x18];                // 8038D7BC -> 803e3958
+            float bonk_recovery_anim_factor;  // 8038D7D4 -> 803e3970
+            float bonk_recoil_anim_speed;     // 8038D7D8 -> 803e3974
+            uint8_t _p1[0x28];                // 8038D7DC -> 803e3978
+            float roll_factor;                // 8038D804 -> 803e39a0
+            uint8_t _p2[0x24];                // 8038d808 -> 803e39a4
         };
         static_assert(sizeof(HumanFrontRoll) == 0x70);
 
         struct HumanBackJump {
-            uint8_t _p0[0x38];  // 8038D82C
+            uint8_t _p0[0x38];  // 8038D82C -> 803e3958
         };
         static_assert(sizeof(HumanBackJump) == 0x38);
 
         struct HumanSideStep {
-            uint8_t _p0[0x68];  // 8038d864
+            uint8_t _p0[0x68];  // 8038d864 -> 803e3a00
         };
         static_assert(sizeof(HumanSideStep) == 0x68);
 
         struct HumanSlide {
-            uint8_t _p0[0x78];  // 8038d8cc
+            uint8_t _p0[0x78];  // 8038d8cc -> 803e3a68
         };
         static_assert(sizeof(HumanSlide) == 0x78);
 
         struct HumanSwim {
-            uint8_t _p0[0x14];  // 8038ED2C
+            uint8_t _p0[0x14];  // 8038ED2C -> 803e4ec8
             uint16_t diving_anim_frames;
             uint8_t _p1[0x02];
             float diving_anim_speed;
