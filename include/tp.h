@@ -315,8 +315,8 @@ namespace TP {
     // static_assert(sizeof(ZelAudio) == 0x13a4);
 
     struct LoadingInfo {
-        uint32_t isLoading;  // 80450CE0
-        uint8_t _p0[0x04];   // 80450CE4
+        uint32_t isLoading;  // 80450CE0 -> 8053a928
+        uint8_t _p0[0x04];   // 80450CE4 -> 8053a92c
     };
     static_assert(sizeof(LoadingInfo) == 0x08);
 
