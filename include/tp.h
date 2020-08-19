@@ -115,11 +115,15 @@ namespace TP {
         Player::Filename player_filename;            // 80406374 -> 80492ADC
         uint8_t _p10;                                // 80406384 -> 80492AEC
         Epona::Filename epona_filename;              // 80406385 -> 80492AED
-        uint8_t _p11[0x14];                          // 80406395 -> 80492AFD
-        bool is_icon_shortcut_on;                    //             80492B11
-        uint8_t _p12;                                //             80492B12
-        bool is_pointer_on;                          //             80492B13
-        uint8_t _p13[0x11];                          //             80492B14
+        uint8_t _p11[0x0D];                          // 80406395 -> 80492AFD
+        bool lockon_type;                            //             80492B0A // 0 : hold, 1 : switch
+        uint8_t _p12[0x03];                          //             80492B0B
+        uint16_t hori_pointer_calib;                 //             80492B0E // Default is 0x015E
+        uint8_t vert_pointer_calib;                  //             80492B10 // Default is 0x00
+        bool icon_shortcut;                          //             80492B11
+        bool camera_control;                         //             80492B12 // 0 : normal, 1 : inverted
+        bool pointer;                                //             80492B13
+        uint8_t _p14[0x11];                          //             80492B14
         Minimap::Warps warps;                        // 804063BD -> 80492B25
         uint8_t _p23[0x174];                         // 804064FF -> 80492C67
         Dungeon::CityInTheSky::Flags flags;          // 80406673 -> 80492DDB
