@@ -38,38 +38,46 @@ namespace TP {
         uint16_t facing;                   // 0x0016
         uint8_t _p1[0x44];                 // 0x0018
         float speed;                       // 0x005C
-        uint8_t _p2[0x40];                 // 0x0060
-        uint8_t current_boots;             // 0x00A0
-        uint8_t _p11;                      // 0x00A1
-        uint8_t status;                    // 0x00A2
-        uint8_t _p3[0x14EF];               // 0x00A3
-        bool over_void;                    // 0x1592
-        uint8_t _p4[0x574];                // 0x1593
-        uint8_t unk_attack_1;              // 0x1B07
-        uint8_t _p15[0x03];                // 0x1B08
-        uint8_t unk_attack_2;              // 0x1B0B
-        uint8_t _p14[0xD4];                // 0x1B0C
-        bool appears_clawshottable;        // 0x1BE0 // only the visual effect when using clawshot
-        uint8_t _p13[0x77E];               // 0x1BE1
-        uint8_t held_item_animation;       // 0x235F // 0xF9 for big rock
-        uint16_t held_item_collision_ptr;  // 0x2360 // may be more than collision
-        uint8_t _p12[0x376];               // 0x2362
-        float sand_height_lost;            // 0x26D8
-        uint8_t _p5[0x412];                // 0x26DC
-        uint8_t air_timer;                 // 0x2AEE
-        uint8_t _p6[0x1E];                 // 0x2AEF
-        uint8_t current_item;              // 0x2B0D
-        uint8_t _p10[0x0A];                // 0x2B0E
-        uint16_t current_action_id;        // 0x2B18
-        uint8_t _p7[0x28];                 // 0x2B1A
-        uint16_t action_value_2;           // 0x2B42
-        uint8_t _p8[0x184];                // 0x2B44
-        uint32_t action_value_1;           // 0x2CC8
-        uint8_t _p9[0x228];                // 0x2CCC
-        float last_ground_y_pos_fall;      // 0x2EF4
-        float last_ground_y_pos_void;      // 0x2EF8
+        uint8_t _p2[0x44];                 // 0x0060
+        uint8_t current_boots;             // 0x00A0 -> 0x00A4
+        uint8_t _p11;                      // 0x00A1 -> 0x00A5
+        uint8_t status;                    // 0x00A2 -> 0x00A6
+        uint8_t _p3[0x14EF];               // 0x00A3 -> 0x00A7
+        bool over_void;                    // 0x1592 -> 0x1596
+        uint8_t _p4[0x574];                // 0x1593 -> 0x1597
+        uint8_t unk_attack_1;              // 0x1B07 -> 0x1B0B
+        uint8_t _p15[0x03];                // 0x1B08 -> 0x1B0C
+        uint8_t unk_attack_2;              // 0x1B0B -> 0x1B0F
+        float link_animation_speed;        //           0x1B10
+        uint8_t _p14[0xA4];                // 0x1B0C -> 0x1B14
+        bool show_aim_pointer;             //           0x1BB8
+        bool appears_clawshottable;        //           0x1BB9 // only the visual effect when using clawshot
+        uint8_t _p14_2;                    //           0x1BBA
+        bool appears_targetable;           //           0x1BBB // only the visual effect when using Gale
+        uint8_t _p13[0x7A8];               // 0x1BE1 -> 0x1BBC
+        uint32_t held_item_animation;      // 0x235F -> 0x2364 // 0xF9 for big rock
+        uint32_t held_item_collision_ptr;  // 0x2360 -> 0x2368 // may be more than collision
+        uint8_t _p12[0x374];               // 0x2362 -> 0x236C
+        float sand_height_lost;            // 0x26D8 -> 0x26E0
+        uint8_t _p5[0x412];                // 0x26DC -> 0x26E4
+        uint8_t air_timer;                 // 0x2AEE -> 0x2AF6
+        uint8_t _p6[0x1D];                 // 0x2AEF -> 0x2AF7
+        uint16_t current_item;             // 0x2B0D -> 0x2B14
+        uint8_t _p10[0x0A];                // 0x2B0E -> 0x2B16
+        uint16_t current_action_id;        // 0x2B18 -> 0x2B20
+        uint8_t _p7[0x28];                 // 0x2B1A -> 0x2B22
+        uint16_t action_value_2;           // 0x2B42 -> 0x2B4A
+        uint8_t _p8[0xB6];                 // 0x2B44 -> 0x2B4C
+        uint16_t idle_timer;               //           0x2C02
+        uint8_t _p8_1[0xCC];               //           0x2C04
+        uint32_t action_value_1;           // 0x2CC8 -> 0x2CD0
+        uint8_t _p8_2[0x4];                //           0x2CD4
+        uint32_t equipped_item_usable;     //           0x2CD8 // bit 2 sets if buttons are globaly enabled
+        uint8_t _p9[0x25C];                // 0x2CCC -> 0x2CDC
+        float last_ground_y_pos_fall;      // 0x2EF4 -> 0x2F38
+        float last_ground_y_pos_void;      // 0x2EF8 -> 0x2F3C
     };
-    static_assert(sizeof(LinkDebug) == 0x2EFC);
+    static_assert(sizeof(LinkDebug) == 0x2F40);
 
     struct GlobalCounters {
         uint32_t game_counter;      // 80430CD8 -> 804BECB8
