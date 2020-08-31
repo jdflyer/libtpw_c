@@ -24,7 +24,7 @@
 #define tp_sConsole_addr 0x8053a8e0
 #define tp_fopScnRq_addr 0x8053a928
 #define tp_titleScreenPtr_addr 804813e0
-#define tp_matrixPtr_addr 0x803f1e10
+#define tp_matrixPtr_addr 0x8047e368
 #define tp_rng_addr 0x8053ae58
 
 // Items
