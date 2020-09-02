@@ -11,6 +11,8 @@
 #define tp_getSave_addr 0x8003929c
 #define tp_putSave_addr 0x800392cc
 #define tp_fapGm_Execute_addr 0x8001e6b0
+#define tp_fastSqrt_addr 0x8025ca1c
+#define tp_sqrt_addr 0x803c8048
 
 // Controller
 #define tp_mPadButton_addr 0x804c2f38
@@ -26,6 +28,7 @@
 #define tp_titleScreenPtr_addr 804813e0
 #define tp_matrixPtr_addr 0x8047e368
 #define tp_rng_addr 0x8053ae58
+#define tp_homeMenuSts_addr 0x8053A968
 
 // Items
 #define tp_clawshot_addr 0x803e4b5c

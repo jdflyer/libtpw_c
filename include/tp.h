@@ -368,6 +368,10 @@ namespace TP {
         int32_t RNG22;
     };
 
+    struct HomeMenuSts {
+        uint8_t is_visible; //              8053A968 // No idea if it is actually its true purpose, but it seems to work
+    };
+
 #define tp_rng (*(TP::RNG *)(tp_rng_addr))
 #define tp_globalCounters (*(TP::GlobalCounters *)(tp_globalCounters_addr))
 #define tp_zelAudio (*(TP::ZelAudio *)(tp_zelAudio_addr))
@@ -377,6 +381,7 @@ namespace TP {
 #define tp_fopScnRq (*(TP::LoadingInfo *)(tp_fopScnRq_addr))
 #define tp_titleScreenInfo (*(TP::TitleScreenInfo *)(tp_titleScreenPtr_addr))
 #define tp_matrixInfo (*(TP::MatrixInfo *)(tp_matrixPtr_addr))
+#define tp_homeMenuSts (*(TP::HomeMenuSts *)(tp_homeMenuSts_addr))
 
     uint32_t get_frame_count() {
         return tp_globalCounters.game_counter;
