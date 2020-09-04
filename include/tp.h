@@ -93,7 +93,7 @@ namespace TP {
     static_assert(sizeof(EponaDebug) == 0x04DC);
 
     struct LinkTunic {
-        uint8_t _p0[0x32A0];          // 0x0000
+        uint8_t _p0[0x32A8];          // 0x0000
         uint16_t tunic_top_red;       // 0x32A8
         uint16_t tunic_top_green;     // 0x32AA
         uint16_t tunic_top_blue;      // 0x32AC
