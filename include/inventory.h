@@ -72,7 +72,7 @@ namespace Inventory {
         ItemWheel item_wheel;                             // 80406274 -> 804929DC
         uint8_t _p0[0x03];                                // 8040628C -> 804929F4
         uint8_t rupee_cs_flags;                           // 8040628F -> 804929F7
-        uint8_t _p1;                                      // 80406290 -> 804929F8
+        uint8_t wood_sword_flag;                          // 80406290 -> 804929F8 // bit 7 wooden sword
         uint8_t equipment_flags_0;                        // 80406291 -> 804929F9 // bit 0 magic armor, bit 1 zora armor
         uint8_t equipment_flags_1;                        // 80406292 -> 804929FA // bit 0 ordon sword, bit 1 master sword, bit 2 ordon shield, bit 3 wooden shield, bit 4 hylian shield, bit 7 hero's clothes
         uint8_t _p2[0x03];                                // 80406293 -> 804929FB
@@ -81,7 +81,9 @@ namespace Inventory {
         uint8_t snail_dragonfly_ant_dayfly_flags;         // 804062A5 -> 80492A0D
         uint8_t phasmid_pillbug_mantis_ladybug_flags;     // 804062A6 -> 80492A0E
         uint8_t beetle_butterfly_stag_grasshopper_flags;  // 804062A7 -> 80492A0F
-        uint8_t _p4[0x04];                                // 804062A8 -> 80492A10
+        uint8_t gm_key_shards;                            // 804062A8 -> 80492A10 // bit 1 sets shard 1, bit 2 shard 2, bit 3 shard 3
+        uint8_t spr_key_items;                            // 804062A9 -> 80492A11 // bit 4 sets pumpkin, bit 5 cheese, bit 6 bedroom key
+        uint8_t _p4[0x02];                                // 804062A8 -> 80492A10
         uint8_t arrow_count;                              // 804062AC -> 80492A14
         uint8_t bomb_bag_1_amnt;                          // 804062AD -> 80492A15
         uint8_t bomb_bag_2_amnt;                          // 804062AE -> 80492A16
